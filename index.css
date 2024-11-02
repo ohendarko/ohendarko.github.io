@@ -67,3 +67,43 @@ a {
   opacity: 0.9;
 }
 
+.socials {
+  list-style-type: none;
+  display: flex;
+  margin-block: 30px;
+}
+
+.social-media-links {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center align the items */
+}
+
+.social-media-links li {
+  margin: 0 10px; /* Margin between each icon */
+  
+}
+
+.social-media-links a {
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Icon size */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-media-links a:hover {
+  color: #6bb9eb; /* Change icon color on hover */
+}
+
+.social-media-links svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: #fff;
+  transition: fill 0.3s;
+}
+
+.social-media-links a:hover svg {
+  fill: #1da1f2;
+}
