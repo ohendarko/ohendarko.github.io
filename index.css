@@ -1,3 +1,37 @@
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  padding-top: 55px;
+  padding-inline: 30px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+}
+
+.navbar {
+  margin-left: auto;
+  margin-right: 15px;
+  display: flex;
+  align-self: flex-end;
+
+}
+
+.navbar h3 {
+  padding: 10px;
+  padding-block: 0;
+}
+
+.intro {
+  margin-top: 30px;
+}
+
+.hi {
+  margin-block: 20px;
+  font-size: xx-large;
+  font-weight: 400;
 }
