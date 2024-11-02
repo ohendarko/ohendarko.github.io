@@ -54,5 +54,16 @@ a {
   color: white;
   border-radius: 1px;
   cursor: pointer;
+  transition: background 0.5s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+.resume:hover {
+  background: linear-gradient(70deg, #1512b9 10.18%, #a70616 100%);
+  border-radius: 3px;
+ 
+}
+
+.resume:active {
+  opacity: 0.9;
 }
 
