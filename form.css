@@ -6,6 +6,14 @@ header h2 {
   margin-left: 25px;
 }
 
+.hleft {
+  margin-right: auto;
+}
+
+.hright {
+  padding-right: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
