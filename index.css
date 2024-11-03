@@ -1,4 +1,17 @@
+:root {
+  --background-color: #ffffff; /* Light mode background */
+  --text-color: #000000;       /* Light mode text color */
+}
+
+[data-theme='dark'] {
+  --background-color: #000000; /* Dark mode background */
+  --text-color: #ffffff;       /* Dark mode text color */
+}
+
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
   font-family: "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -16,6 +29,8 @@ header {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.742);
   display: flex;
   justify-content: space-between;
+  font-family: 'Roboto Mono', "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
 }
 
 a {
@@ -49,7 +64,7 @@ a {
 .hi {
   margin-block: 8px;
   font-size: 3em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .hi2 {
@@ -178,6 +193,7 @@ ul {
 .icon-list {
   display: flex;
   justify-content: space-between;
+  font-family: 'Roboto Mono', "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .contact-me {
@@ -216,4 +232,5 @@ footer {
   font-size: small;
   display: flex;
   justify-content: center;
+  font-family: 'Roboto Mono', "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
