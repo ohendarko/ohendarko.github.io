@@ -145,6 +145,10 @@ a {
   fill: #c507ae; /* Change icon color on hover */
 }
 
+.technologies {
+  padding-inline: 55px;
+}
+
 .featured-works {
   background-color: rgb(207, 219, 242);
   padding-inline: 55px;
