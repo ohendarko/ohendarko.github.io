@@ -1,0 +1,56 @@
+body {
+  padding-top: 80px;
+}
+
+header {
+  margin-left: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgb(231, 237, 248);
+  padding-inline: 30px;
+  padding-block: 10px;
+  font-size: large;
+}
+
+.slot {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+label {
+  width: 150px;
+}
+
+input, textarea {
+  padding: 5px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: 3px;
+  color: #1c1d77;
+  font-family: inherit;
+}
+
+
+button {
+  font-family: inherit;
+  background: linear-gradient(90deg, #a70616 10.18%, #1512b9 100%);
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+  color: white;
+  border: none;
+  padding: 5px;
+  max-width: 200px;
+  align-self: center;
+}
+
+button:hover {
+  background: linear-gradient(70deg, #1512b9 10.18%, #a70616 100%);
+}
+
+button:active {
+  opacity: 0.9;
+}

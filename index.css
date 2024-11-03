@@ -2,7 +2,9 @@ body {
   font-family: "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   display: flex;
   padding-top: 55px;
-  padding-inline: 30px;
+  padding-bottom: 100px;
+  padding-inline: none;
+  justify-content: center;
 }
 
 header {
@@ -10,7 +12,10 @@ header {
   top: 0;
   right: 0;
   width: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.742);
   display: flex;
+  justify-content: space-between;
 }
 
 a {
@@ -18,22 +23,27 @@ a {
   text-decoration: none;
 
 }
+.home {
+  margin-left: 45px;
+  margin-right: auto;
+}
 
 .navbar {
-  margin-left: auto;
-  margin-right: 15px;
   display: flex;
   align-self: flex-end;
-
+  z-index: 200;
+  width: 100%;
 }
 
 .navbar h3 {
   padding: 10px;
   padding-block: 0;
+  
 }
 
 .intro {
   margin-top: 30px;
+  padding-inline: 55px;
 }
 
 .hi {
@@ -42,14 +52,28 @@ a {
   font-weight: 500;
 }
 
-.brief_desc {
-  margin-block: 1em;
+.hi2 {
+  color: #1f113b;
 }
 
+.brief_desc {
+  margin-block: 1em;
+  max-width: 800px;
+}
+
+.Resume {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
 
 .resume {
-  margin-top: 50px;
-  padding: 5px;
+  margin-right: 100px;
+}
+
+.resume,
+.hire-me {
+  padding: 10px;
   background: linear-gradient(90deg, #a70616 10.18%, #1512b9 100%);
   color: white;
   border-radius: 1px;
@@ -57,20 +81,23 @@ a {
   transition: background 0.5s ease-in-out, border-radius 0.2s ease-in-out;
 }
 
-.resume:hover {
+.resume:hover,
+.hire-me:hover {
   background: linear-gradient(70deg, #1512b9 10.18%, #a70616 100%);
   border-radius: 3px;
  
 }
 
-.resume:active {
+.resume:active,
+.hire-me:active {
   opacity: 0.9;
 }
 
 .socials {
   list-style-type: none;
   display: flex;
-  margin-block: 30px;
+  margin-bottom: 60px;
+  margin-top: 10px;
 }
 
 .social-media-links {
@@ -87,23 +114,63 @@ a {
 }
 
 .social-media-links a {
-  color: #fff; /* Icon color */
+  color: #110101; /* Icon color */
   font-size: 24px; /* Icon size */
   text-decoration: none; /* Remove underline from links */
   transition: color 0.3s; /* Smooth color transition */
 }
 
-.social-media-links a:hover {
-  color: #6bb9eb; /* Change icon color on hover */
-}
+
 
 .social-media-links svg {
-  width: 1.2rem;
-  height: 1.2rem;
-  fill: #fff;
+  width: 2rem;
+  height: 2rem;
+  fill: #1d0303;
   transition: fill 0.3s;
 }
 
-.social-media-links a:hover svg {
-  fill: #1da1f2;
+/* .social-media-links a:hover svg {
+  fill: #065485;
+} */
+
+.social-media-links .twitter:hover svg {
+  fill: #6bb9eb; /* Change icon color on hover */
+}
+
+.social-media-links .linkedin:hover svg {
+  fill: #280887; /* Change icon color on hover */
+}
+
+.social-media-links .github:hover svg{
+  fill: #c507ae; /* Change icon color on hover */
+}
+
+.featured-works {
+  background-color: rgb(207, 219, 242);
+  padding-inline: 55px;
+}
+
+.contact-me {
+  padding-inline: 55px;
+  display: flex;
+  background-color: rgb(236, 232, 232);
+}
+
+.email {
+  /* font-family: "Roboto Mono"; */
+  background-color: #d4dddf;
+  padding: 2px;
+}
+
+.contact {
+  margin-right: 50px;
+}
+
+.contacting {
+  display: flex;
+}
+
+.contacting svg {
+  height: 3rem;
+  width: 3rem;
 }
