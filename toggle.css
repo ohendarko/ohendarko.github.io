@@ -50,8 +50,8 @@
   content: 'Toggle';
   /* Add the text content here */
   position: absolute;
-  top: 50%;
-  left: 100%;
+  top: 35%;
+  left: 90%;
   transform: translate(20%, -40%);
   font-size: 45px;
   font-family: 'Roboto Mono', "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -74,7 +74,7 @@ input:checked+.toggle-label::after {
   /* Add the text content here */
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: -10%;
   transform: translate(-100%, -50%);
   font-size: 45px;
   font-family: 'Roboto Mono', "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
