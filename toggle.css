@@ -1,0 +1,103 @@
+/* body {
+  display: flex;
+  align-items: center;
+} */
+
+.toggle {
+  width: 10%;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff00;
+  z-index: 0;
+}
+
+/* .toggle-cb {
+  height: 100px;
+  width: 100px;
+} */
+
+.toggle-label {
+  background-color: #e9e5e5;
+  width: 40px;
+  height: 14px;
+  border-radius: 200px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  content: 'No';
+  color: black;
+}
+
+.toggle-label::before {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  border: 2px solid rgb(12, 6, 79);
+  width: 20px;
+  height: 20px;
+  border-radius: 200px;
+  transition: 0.2s;
+  margin: -3px;
+}
+
+.toggle-label::after {
+  content: 'Dark Mode';
+  /* Add the text content here */
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(20%, -40%);
+  font-size: 45px;
+  font-family: 'Roboto Mono', "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: small;
+  color: rgb(69, 49, 217);
+  transition: 0.2s;
+}
+
+input:checked+.toggle-label {
+  background-color: rgb(15, 15, 82);
+}
+
+input:checked+.toggle-label::before {
+  transform: translateX(25px);
+}
+
+input:checked+.toggle-label::after {
+  content: 'Light Mode';
+  /* Add the text content here */
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-100%, -50%);
+  font-size: 45px;
+  font-family: 'Roboto Mono', "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: small;
+  color: rgba(76, 138, 193, 0.549);
+}
+
+input {
+  display: none;
+}
+
+/* .toggle-inner {
+  content: 'No';
+  height: 50px;
+  width: 50px;
+  background-color: rgb(45, 32, 180);
+}
+
+.toggle-switch {
+  content: 'No';
+  color: black;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(35, 180, 32);
+} */
