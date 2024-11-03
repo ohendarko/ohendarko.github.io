@@ -17,6 +17,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   font-family: "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding-top: 55px;
   padding-inline: none;
@@ -28,6 +29,7 @@ header {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   width: 100%;
   background-color: var(--background-color);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.742);
@@ -53,6 +55,7 @@ a {
   align-self: flex-end;
   z-index: 200;
   width: 100%;
+  margin-right: 15px;
 }
 
 .navbar h3 {
@@ -68,6 +71,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 800px;
 }
 
 .hi {
