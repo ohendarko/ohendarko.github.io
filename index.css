@@ -1,8 +1,8 @@
 body {
   font-family: "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   padding-top: 55px;
-  padding-bottom: 100px;
   padding-inline: none;
   justify-content: center;
 }
@@ -48,7 +48,7 @@ a {
 
 .hi {
   margin-block: 8px;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 500;
 }
 
@@ -68,7 +68,7 @@ a {
 }
 
 .resume {
-  margin-right: 100px;
+  margin-right: auto;
 }
 
 .resume,
@@ -149,15 +149,42 @@ a {
   padding-inline: 55px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .featured-works {
-  background-color: rgb(207, 219, 242);
+  background-color: rgba(20, 101, 242, 0.059);
   padding-inline: 55px;
+  padding-block: 10px;
+  margin-bottom: 10px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 80%;
+  margin-bottom: 50px;
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-me {
   padding-inline: 55px;
   display: flex;
   background-color: rgb(236, 232, 232);
+  padding-bottom: 10px;
 }
 
 .email {
@@ -177,4 +204,16 @@ a {
 .contacting svg {
   height: 3rem;
   width: 3rem;
+}
+
+.meme-gen {
+  background-image: linear-gradient(rgba(242, 244, 247, 0.818), rgba(238, 240, 241, 0.856)), url("meme-genScreenshot.png");
+  background-size: cover;
+}
+
+footer {
+  margin-top: 100px;
+  font-size: small;
+  display: flex;
+  justify-content: center;
 }
