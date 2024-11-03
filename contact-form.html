@@ -15,6 +15,14 @@
     <div class="hright"><a href="index.html"><h3>Back</h3></a></div>
     
   </header>
+
+  <div class="toggle">
+    <input type="checkbox" name="toggle" class="toggle-cb" id="toggle-0" checked>
+    <label class="toggle-label" for="toggle-0">
+        <div class="toggle-inner"></div>
+        <div class="toggle-switch"></div>
+    </label>
+  </div>
   
   
   <form action="https://formspree.io/f/xdkoepzb" method="POST">
@@ -22,23 +30,23 @@
       <legend>Contact Me</legend>
       <div class="slot">
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" class="show" required>
       </div>
       
       <div class="slot">
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" class="show" required>
       </div>
       
       <div class="slot">
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required>
+        <input type="text" id="subject" name="subject" class="show" required>
       </div>
       
       
       <div class="slot">
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <textarea id="message" name="message" rows="5" class="show" required></textarea>
       </div>
       
       <button type="submit">Send</button>
@@ -62,6 +70,21 @@
         }
       });
     });
+
+      const themeToggle = document.getElementById('toggle-0');
+      const savedTheme = localStorage.getItem('theme') || '';
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+      }
+
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? '' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        themeToggle.textContent = newTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+        localStorage.setItem('theme', newTheme); // Save the theme preference
+      });
   </script>
 </body>
 </html>
