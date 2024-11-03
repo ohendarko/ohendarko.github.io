@@ -47,7 +47,7 @@
 }
 
 .toggle-label::after {
-  content: 'Dark Mode';
+  content: 'Toggle';
   /* Add the text content here */
   position: absolute;
   top: 50%;
@@ -70,7 +70,7 @@ input:checked+.toggle-label::before {
 }
 
 input:checked+.toggle-label::after {
-  content: 'Light Mode';
+  content: 'Toggle';
   /* Add the text content here */
   position: absolute;
   top: 50%;
