@@ -121,7 +121,7 @@ a {
 
 .brief_desc {
   margin-block: 1em;
-  max-width: 800px;
+  max-width: auto;
 }
 
 .Resume {
