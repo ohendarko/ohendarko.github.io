@@ -106,7 +106,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 800px;
+  max-width: auto;
 }
 
 .hi {
