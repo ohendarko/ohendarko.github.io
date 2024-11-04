@@ -253,8 +253,13 @@ ul {
   flex-direction: column;
   padding-inline: var(--inline-padding);
   padding-block: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   /* justify-content: center; */
+}
+
+.project h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .meme-gen {
@@ -308,8 +313,17 @@ ul {
   display: flex;
 }
 
+.project-preview {
+  flex: 1;
+}
+
+.project-summary{
+  flex: 3;
+  margin-left: 5px;
+}
+
 .profile-pic {
-  width: 10em;
+  width: 100%;
   height: auto;
   margin-right: 5px;
 }
