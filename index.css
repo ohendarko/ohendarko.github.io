@@ -5,6 +5,9 @@
   --form-color: rgb(231, 237, 248);
   --svg-fill: #1d0303;
   --big-text-color: #2f0682;
+  --scroll-bar-color: rgb(2, 9, 116);
+  --scroll-bar-background: #ffffff;
+  --scroll-bar-hover: rgb(1, 7, 82);
 }
 
 [data-theme='dark'] {
@@ -13,6 +16,34 @@
   --form-color: rgb(19, 28, 46);
   --svg-fill: #ffffff;
   --big-text-color: #208bfe;
+  --scroll-bar-color: rgb(238, 239, 243);
+  --scroll-bar-background: #626161;
+  --scroll-bar-hover: #868484 ;
+}
+
+/* Width of the entire scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  transition: background-color 0.3s;
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: var(--background-color); /* Light gray */
+  transition: background-color 0.3s;
+}
+
+/* Scrollbar handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar-color); /* Darker gray */
+  border-radius: 3px; /* Rounded edges */
+  transition: background-color 0.3s;
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-bar-hover); /* Even darker gray on hover */
+  transition: background-color 0.3s;
 }
 
 body {
