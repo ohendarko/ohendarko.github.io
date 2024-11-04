@@ -3,3 +3,9 @@
     max-width: 100% !important;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #333;
+  }
+} */
