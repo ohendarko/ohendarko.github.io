@@ -2,6 +2,11 @@
   main {
     max-width: 100% !important;
   }
+
+  form {
+    padding-inline: 2px;
+    width: auto;
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {
