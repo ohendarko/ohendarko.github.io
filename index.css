@@ -130,6 +130,7 @@ a {
 
 .Resume {
   display: flex;
+  flex: 1;
   margin-top: 30px;
   margin-bottom: 55px;
   max-width: auto;
@@ -137,10 +138,22 @@ a {
 
 .resume {
   margin-right: auto;
+  flex: 2;
+}
+
+.hire-me {
+  flex: 1;
+}
+
+.res {
+  margin-inline: 5vw;
+
 }
 
 .resume,
 .hire-me {
+  display: flex;
+  justify-content: center;
   padding: 10px;
   background: linear-gradient(90deg, #a70616 10.18%, #1512b9 100%);
   color: white;
@@ -251,6 +264,7 @@ ul {
 
 .icon-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between !important;
   font-family: 'Roboto Mono', "Poppins", "Roboto Mono", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
