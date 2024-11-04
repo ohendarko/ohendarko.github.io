@@ -278,14 +278,14 @@ ul {
   padding-inline: var(--inline-padding);
   display: flex;
   background-color: rgba(240, 235, 235, 0.299);
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  justify-content: center;
 }
 
-.email {
-  /* font-family: "Roboto Mono"; */
+/* .email {
   background-color: #d4dddf;
   padding: 2px;
-}
+} */
 
 .contact {
   margin-right: 50px;
@@ -293,11 +293,22 @@ ul {
 
 .contacting {
   display: flex;
+  justify-content: center;
 }
 
 .contacting svg {
   height: 3rem;
   width: 3rem;
+}
+
+
+.contact-type {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-type div {
+  align-self: center;
 }
 
 /* .meme-gen {
